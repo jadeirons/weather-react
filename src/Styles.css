@@ -1,0 +1,120 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #66616d;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+a {
+  color: #6667ab;
+}
+
+.Container {
+  padding-top: 15px;
+}
+
+.Search-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  min-width: 300px;
+  padding: 15px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  border-color: #6667ab;
+  color: #6667ab;
+}
+
+.btn:hover {
+  background-color: #6667ab;
+  border: #6667ab;
+}
+
+.Box {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 5px 5px 25px 15px rgba(0, 0, 0, 0.02);
+  max-width: 600px;
+  min-width: min-content;
+  border-radius: 4px;
+  border: #d3d3d4 solid 1px;
+}
+
+.city,
+.current-icon,
+.current-temperature,
+.current-state {
+  color: #6667ab;
+  font-weight: 500;
+}
+
+.current-icon,
+.current-temperature {
+  font-size: 60px;
+}
+
+.unit {
+  font-size: 18px;
+  position: relative;
+  top: -25px;
+}
+
+.current-details {
+  font-size: 14px;
+  position: relative;
+  top: 12px;
+}
+
+.current-state {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.current-high {
+  font-weight: 600;
+}
+
+.upcoming-grid {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border: #66616d solid 0px;
+}
+
+.forecast-day,
+.forecast-temp-high,
+.forecast-temp-low {
+  font-size: 14px;
+}
+
+.forecast-temp-high {
+  font-weight: 600;
+}
+
+.icons {
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+.footer {
+  font-size: 12px;
+}
