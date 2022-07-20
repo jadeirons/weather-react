@@ -6,7 +6,7 @@ export default function Footer() {
       <br />
       <div class="footer">
         <a
-          href="https://github.com/jadeirons/weather-app"
+          href="https://github.com/jadeirons/weather-react"
           target="_blank"
           rel="noreferrer"
         >
