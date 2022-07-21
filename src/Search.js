@@ -10,11 +10,6 @@ export default function Search() {
           class="search"
         />
         <input type="submit" value="Search" class="button" />
-        <input
-          type="submit"
-          value="Use my location"
-          class="button location-button"
-        />
       </form>
     </div>
   );
