@@ -16,8 +16,6 @@ export default function Search() {
             <span class="current-icon">
               <i id="icon" class="fa-solid fa-cloud"></i>
             </span>
-
-            <p class="current-description">Cloudy</p>
           </div>
 
           <div class="col-4 current-temperature">
@@ -36,20 +34,20 @@ export default function Search() {
         </div>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 weather-detail one">
             <p>
-              Feels like: <span id="feels-like">26</span>°C
+              Feels like: <div id="feels-like">26°C</div>
             </p>
           </div>
 
-          <div class="col-4">
+          <div class="col-4 weather-detail two">
             <p>
-              Humidity: <span id="humidity">50</span>%
+              Humidity: <div id="humidity">50%</div>
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-4 weather-detail three">
             <p>
-              Wind: <span id="wind">6</span>km/hr
+              Wind: <div id="wind">6km/hr</div>
             </p>
           </div>
         </div>

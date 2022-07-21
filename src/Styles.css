@@ -3,6 +3,7 @@
   --secondary-color: #5bab7a;
   --third-color: #f9ad11;
   --fourth-color: #ff543f;
+  --fifth-color: #b97442;
   --light-color: #fff8e7;
 }
 
@@ -30,6 +31,11 @@ h2 {
 
 a {
   color: var(--fourth-color);
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 .Box {
@@ -88,6 +94,30 @@ a {
   object-fit: cover;
   border-radius: 30px;
   margin-top: 40px;
+}
+
+.weather-detail {
+  display: flex;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  margin: 0 auto;
+  width: 25%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.weather-detail.one {
+  background-color: var(--fourth-color);
+}
+
+.weather-detail.two {
+  background-color: var(--fifth-color);
+}
+
+.weather-detail.three {
+  background-color: var(--light-color);
+  color: black;
 }
 
 .current-icon,
