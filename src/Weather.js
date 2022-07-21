@@ -8,19 +8,16 @@ export default function Search() {
       <div class="weather-section">
         <div class="row">
           <div class="col-12">
-            <h1>Toronto, CA</h1>
+            <h1>Weather in Toronto, CA</h1>
+            <h2>It's 8:15am on Tuesday, July 21, 2022</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
-            <span class="current-icon">
-              <i id="icon" class="fa-solid fa-cloud"></i>
+          <div class="col-8">
+            <span class="current-temperature">
+              <i id="icon" class="fa-solid fa-cloud"></i> 24
+              <span class="unit">°C</span>
             </span>
-          </div>
-
-          <div class="col-4 current-temperature">
-            <span>24</span>
-            <span class="unit">°C</span>
           </div>
 
           <div class="col-4">

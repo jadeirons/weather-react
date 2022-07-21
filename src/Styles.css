@@ -12,21 +12,24 @@ body {
   font-weight: 300;
   text-align: center;
   background-color: white;
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 600;
-  text-align: left;
-  color: white;
-  margin-top: 15px;
-  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 18px;
-  font-weight: 200;
-  color: white;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 a {
@@ -35,7 +38,7 @@ a {
 
 p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .Box {
@@ -100,12 +103,11 @@ p {
 .weather-detail {
   display: flex;
   border-radius: 30px;
-  padding: 10px;
+  padding: 5px;
   color: white;
   margin: 0 auto;
   width: 20%;
   justify-content: center;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -122,20 +124,11 @@ p {
   color: black;
 }
 
-.current-icon,
-.current-temperature,
-.current-state {
+.current-temperature {
   color: white;
   font-weight: 500;
   line-height: 100px;
-}
-
-.current-icon {
-  font-size: 50px;
-}
-
-.current-temperature {
-  font-size: 90px;
+  font-size: 55px;
 }
 
 .weather-section {
@@ -145,18 +138,18 @@ p {
   float: left;
   width: 60%;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin: 10px;
   border-radius: 30px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
   background: var(--third-color);
   color: white;
 }
 
 .weather-stat {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bolder;
 }
 
@@ -172,6 +165,7 @@ p {
 
 .high-low {
   margin-top: 30px;
+  text-align: left;
 }
 
 .upcoming-grid {
@@ -199,4 +193,5 @@ p {
 .footer {
   font-size: 12px;
   margin-top: 200px;
+  color: black;
 }
