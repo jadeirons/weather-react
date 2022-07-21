@@ -49,10 +49,6 @@ export default function Search() {
           </div>
         </div>
       </div>
-      <div class="container"></div>
-      <div class="current-state" id="current-state"></div>
-
-      <span id="forecast"></span>
     </div>
   );
 }
