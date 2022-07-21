@@ -30,7 +30,7 @@ h2 {
 }
 
 a {
-  color: var(--main-color);
+  color: var(--fourth-color);
 }
 
 .Box {
@@ -85,7 +85,7 @@ a {
 }
 
 .weather-image {
-  width: 30%;
+  width: 35%;
   object-fit: cover;
   border-radius: 30px;
   margin-top: 40px;
@@ -106,7 +106,7 @@ a {
 .weather-section {
   position: relative;
   top: 50px;
-  left: -30px;
+  left: -40px;
   float: left;
   width: 60%;
   text-align: center;
@@ -116,7 +116,7 @@ a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-  background: var(--main-color);
+  background: var(--third-color);
   color: white;
 }
 
