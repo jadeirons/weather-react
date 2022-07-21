@@ -62,13 +62,14 @@ p {
 
 .button,
 .search {
-  display: inline-block;
   border: var(--fourth-color) 1px solid;
   color: var(--fourth-color);
   background-color: white;
   border: var(--fourth-color) 1px solid;
-  padding: 6px;
+  padding: 3px;
   border-radius: 4px;
+  font-size: 14px;
+  padding: 2px;
 }
 .button {
   border-bottom-left-radius: 0;
@@ -78,7 +79,7 @@ p {
 }
 
 .search {
-  width: 60%;
+  width: 30%;
   outline: none;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -92,7 +93,7 @@ p {
 }
 
 .weather-image {
-  width: 35%;
+  width: 30%;
   object-fit: cover;
   border-radius: 30px;
   margin-top: 40px;
@@ -131,7 +132,7 @@ p {
 
 .weather-section {
   position: relative;
-  top: 50px;
+  top: 45px;
   left: -30px;
   float: left;
   width: 60%;
