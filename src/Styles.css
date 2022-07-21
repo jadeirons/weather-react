@@ -11,7 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   text-align: center;
-  background-color: white;
+  background-color: var(--light-color);
   color: white;
 }
 
@@ -51,9 +51,8 @@ p {
   max-width: 1000px;
   min-width: min-content;
   border-radius: 30px;
-  background-color: var(--light-color);
+  background-color: white;
   padding: 20px;
-  border: solid 1px var(--third-color);
 }
 
 .search-form {
@@ -205,8 +204,8 @@ p {
   background: var(--fifth-color);
 }
 
-.day {
-  font-size: 20px;
+.forecast.day {
+  font-size: 16px;
   font-weight: bolder;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -214,12 +213,8 @@ p {
 
 .forecast-temperature {
   font-weight: 600;
-  font-size: 36px;
-}
-
-.icons {
-  font-size: 30px;
-  padding: 15px 0;
+  font-size: 26px;
+  padding-bottom: 10px;
 }
 
 .footer {

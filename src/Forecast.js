@@ -5,7 +5,7 @@ export default function Forecast() {
     <div class="row forecast-section">
       <div class="forecast-box col-2 one">
         <div class="row">
-          <p class="day">Monday</p>
+          <p class="forecast day">Monday</p>
         </div>
         <div class="row">
           <span class="forecast-temperature">
@@ -33,7 +33,7 @@ export default function Forecast() {
       </div>
       <div class="forecast-box col-2 two">
         <div class="row">
-          <p class="day">Tuesday</p>
+          <p class="forecast day">Tuesday</p>
         </div>
         <div class="row">
           <span class="forecast-temperature">
@@ -61,7 +61,7 @@ export default function Forecast() {
       </div>
       <div class="forecast-box col-2 three">
         <div class="row">
-          <p class="day">Wednesday</p>
+          <p class="forecast day">Wednesday</p>
         </div>
         <div class="row">
           <span class="forecast-temperature">
@@ -89,7 +89,7 @@ export default function Forecast() {
       </div>
       <div class="forecast-box col-2 four">
         <div class="row">
-          <p class="day">Thursday</p>
+          <p class="forecast day">Thursday</p>
         </div>
         <div class="row">
           <span class="forecast-temperature">
@@ -117,7 +117,7 @@ export default function Forecast() {
       </div>
       <div class="forecast-box col-2 five">
         <div class="row">
-          <p class="day">Friday</p>
+          <p class="forecast day">Friday</p>
         </div>
         <div class="row">
           <span class="forecast-temperature">
