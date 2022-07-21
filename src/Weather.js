@@ -2,45 +2,60 @@ import "./Styles.css";
 
 export default function Search() {
   return (
-    <div class="Box">
-      <h1>
-        WEATHER IN{" "}
-        <span class="city" id="city">
-          TORONTO
-        </span>
-      </h1>
-      <h2 id="h2">CLOUDY</h2>
-      <div class="container">
+    <div class="Box Main">
+      <img class="header-image" src="/images/sunny.jpg" alt="sunny" />
+
+      <div class="weather-test">
         <div class="row">
           <div class="col-4 current-icon">
             <i id="icon" class="fa-solid fa-cloud"></i>
           </div>
+
           <div class="col-4 current-temperature">
-            <span id="current-temp">24</span>
+            <span>24</span>
             <span class="unit">°C</span>
           </div>
-          <div class="col-4 current-details">
-            <ul>
-              <li>
-                Feels like: <span id="feels-like">26</span>°C
-              </li>
-              <li>
-                Humidity: <span id="humidity">50</span>%
-              </li>
-              <li>
-                Wind: <span id="wind">6</span>km/hr
-              </li>
-            </ul>
+
+          <div class="col-4 city">
+            <h2>Toronto</h2>
+            <h3>Cloudy</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="high-low">
+              <span class="current-high">
+                HIGH: <span id="current-high"></span>°C
+              </span>{" "}
+              | LOW: <span id="current-low"></span>°C
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <p>
+              {" "}
+              Feels like: <span id="feels-like">26</span>°C
+            </p>
+          </div>
+
+          <div class="col-4">
+            <p>
+              Humidity: <span id="humidity">50</span>%
+            </p>
+          </div>
+          <div class="col-4">
+            <p>
+              Wind: <span id="wind">6</span>km/hr
+            </p>
           </div>
         </div>
       </div>
+      <div class="container"></div>
       <div class="current-state" id="current-state"></div>
-      <div class="high-low">
-        <span class="current-high">
-          HIGH: <span id="current-high"></span>°C
-        </span>{" "}
-        | LOW: <span id="current-low"></span>°C
-      </div>
+
       <hr />
       <span id="forecast"></span>
     </div>
