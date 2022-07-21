@@ -2,7 +2,7 @@ import "./Styles.css";
 
 export default function Search() {
   return (
-    <div class="Box Search">
+    <div class="Search">
       <form class="search-form">
         <input
           type="search"

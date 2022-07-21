@@ -2,8 +2,8 @@ import "./Styles.css";
 
 export default function Search() {
   return (
-    <div class="Box Main">
-      <img class="header-image" src="/images/sunny.jpg" alt="sunny" />
+    <div class="Main">
+      <img class="weather-image" src="/images/cloudy.png" alt="cloudy" />
 
       <div class="weather-test">
         <div class="row">
@@ -17,8 +17,8 @@ export default function Search() {
           </div>
 
           <div class="col-4 city">
-            <h2>Toronto</h2>
-            <h3>Cloudy</h3>
+            <p class="city">Toronto</p>
+            <p class="current-description">Cloudy</p>
           </div>
         </div>
 
@@ -56,7 +56,6 @@ export default function Search() {
       <div class="container"></div>
       <div class="current-state" id="current-state"></div>
 
-      <hr />
       <span id="forecast"></span>
     </div>
   );
