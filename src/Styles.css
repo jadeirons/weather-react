@@ -92,11 +92,14 @@ p {
   transition: ease-in-out 200ms all;
 }
 
+.main {
+  width: 100%;
+}
+
 .weather-image {
-  width: 30%;
+  width: 90%;
   object-fit: cover;
   border-radius: 30px;
-  margin-top: 40px;
 }
 
 .weather-detail {
@@ -130,9 +133,9 @@ p {
   font-size: 55px;
 }
 
-.weather-section {
+.title-section {
   position: relative;
-  top: 45px;
+  top: -60px;
   left: -30px;
   float: left;
   width: 60%;
@@ -142,6 +145,17 @@ p {
   border-radius: 30px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
+  background: var(--third-color);
+  color: white;
+}
+
+.weather-section {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
   box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
   background: var(--third-color);
   color: white;
