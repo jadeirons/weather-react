@@ -61,17 +61,17 @@ p {
 .button,
 .search {
   display: inline-block;
-  border: var(--third-color) 1px solid;
-  color: var(--third-color);
+  border: var(--fourth-color) 1px solid;
+  color: var(--fourth-color);
   background-color: white;
-  border: var(--third-color) 1px solid;
+  border: var(--fourth-color) 1px solid;
   padding: 6px;
   border-radius: 4px;
 }
 .button {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  background-color: var(--third-color);
+  background-color: var(--fourth-color);
   color: white;
 }
 
@@ -102,9 +102,10 @@ p {
   padding: 10px;
   color: white;
   margin: 0 auto;
-  width: 25%;
+  width: 20%;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .weather-detail.one {
@@ -125,11 +126,15 @@ p {
 .current-state {
   color: white;
   font-weight: 500;
+  line-height: 100px;
 }
 
-.current-icon,
+.current-icon {
+  font-size: 50px;
+}
+
 .current-temperature {
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .weather-section {
@@ -147,6 +152,11 @@ p {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   background: var(--third-color);
   color: white;
+}
+
+.weather-stat {
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .unit {

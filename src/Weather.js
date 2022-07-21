@@ -36,18 +36,18 @@ export default function Search() {
         <div class="row">
           <div class="col-4 weather-detail one">
             <p>
-              Feels like: <div id="feels-like">26°C</div>
+              Feels like: <div class="weather-stat">26°C</div>
             </p>
           </div>
 
           <div class="col-4 weather-detail two">
             <p>
-              Humidity: <div id="humidity">50%</div>
+              Humidity: <div class="weather-stat">50%</div>
             </p>
           </div>
           <div class="col-4 weather-detail three">
             <p>
-              Wind: <div id="wind">6km/hr</div>
+              Wind: <div class="weather-stat">6km/hr</div>
             </p>
           </div>
         </div>
