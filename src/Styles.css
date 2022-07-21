@@ -189,6 +189,22 @@ p {
   color: white;
 }
 
+.forecast-box.one {
+  background: var(--main-color);
+}
+.forecast-box.two {
+  background: var(--secondary-color);
+}
+.forecast-box.three {
+  background: var(--third-color);
+}
+.forecast-box.four {
+  background: var(--fourth-color);
+}
+.forecast-box.five {
+  background: var(--fifth-color);
+}
+
 .day {
   font-size: 20px;
   font-weight: bolder;
