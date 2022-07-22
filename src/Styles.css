@@ -48,11 +48,11 @@ p {
   margin-bottom: 20px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
   width: 80%;
-  max-width: 1000px;
+  max-width: 1100px;
   min-width: 800px;
   border-radius: 30px;
-  background-color: var(--light-color);
-  padding: 20px;
+  background-color: white;
+  padding: 60px;
 }
 
 .search-form {
@@ -95,21 +95,16 @@ p {
   transition: ease-in-out 200ms all;
 }
 
-.main {
-  width: 100%;
-}
-
 .weather-image {
-  width: 70%;
-  object-fit: cover;
   border-radius: 30px;
+  max-height: 250px;
 }
 
 .weather-detail {
   display: flex;
   border-radius: 30px;
   padding: 5px;
-  background-color: var(--light-color);
+  background-color: white;
   margin: 0 auto;
   width: 20%;
   justify-content: center;
@@ -126,20 +121,21 @@ p {
   justify-content: center;
   margin-bottom: 10px;
   margin-top: 10px;
-  background-color: var(--light-color);
+  background-color: white;
 }
 
 .current-temperature {
   color: white;
   font-weight: 500;
   line-height: 100px;
-  font-size: 55px;
+  font-size: 65px;
+  color: black;
 }
 
 .title-section {
   position: relative;
-  left: -30px;
-  top: -60px;
+  left: -70px;
+  top: -85px;
   float: left;
   width: 60%;
   text-align: center;
@@ -149,19 +145,20 @@ p {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
-  background: var(--third-color);
+  background: var(--fourth-color);
   color: white;
 }
 
 .weather-section {
+  margin: 0 auto;
   width: 100%;
+  box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
+  background: var(--light-color);
+  border-radius: 30px;
+  margin-top: 10px;
+  color: black;
   text-align: center;
   padding: 10px;
-  margin-top: 40px;
-  border-radius: 30px;
-  box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
-  background: var(--third-color);
-  color: white;
 }
 
 .weather-stat {
@@ -172,7 +169,8 @@ p {
 .unit {
   font-size: 18px;
   position: relative;
-  top: -25px;
+  top: -35px;
+  color: black;
 }
 
 .current-high {
@@ -237,6 +235,6 @@ p {
 
 .footer {
   font-size: 12px;
-  margin-top: 200px;
+  margin-top: 10px;
   color: black;
 }
