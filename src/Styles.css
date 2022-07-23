@@ -11,7 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   text-align: center;
-  background-color: white;
+  background-color: #f4f2f2;
   color: white;
 }
 
@@ -23,7 +23,7 @@ h2 {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -34,11 +34,17 @@ h2 {
 
 a {
   color: var(--fourth-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--fifth-color);
+  transition: all ease-in-out 150ms;
 }
 
 p {
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .Box {
@@ -51,28 +57,29 @@ p {
   max-width: 1100px;
   min-width: 800px;
   border-radius: 30px;
+  padding: 30px;
+  padding-top: 15px;
+  padding-bottom: 0px;
   background-color: white;
-  padding: 60px;
 }
 
 .search-form {
-  align-items: right;
-  width: 70%;
+  width: 100%;
   padding: 15px;
-  margin-left: 400px;
-  margin-top: 10px;
+}
+
+input::placeholder {
+  color: var(--fourth-color);
 }
 
 .button,
 .search {
-  border: var(--fourth-color) 1px solid;
-  color: var(--fourth-color);
+  color: black;
   background-color: white;
   border: var(--fourth-color) 1px solid;
   padding: 3px;
   border-radius: 4px;
   font-size: 14px;
-  padding: 2px;
 }
 .button {
   border-bottom-left-radius: 0;
@@ -95,33 +102,52 @@ p {
   transition: ease-in-out 200ms all;
 }
 
+.unit-section {
+  text-decoration: none;
+  height: 0;
+}
+
 .weather-image {
   border-radius: 30px;
-  max-height: 250px;
+  max-height: 220px;
 }
 
 .weather-detail {
   display: flex;
   border-radius: 30px;
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   margin: 0 auto;
-  width: 20%;
+  width: 25%;
   justify-content: center;
-  margin-bottom: 10px;
   color: black;
 }
 
-.weather-detail.forecast {
-  display: flex;
-  border-radius: 30px;
-  padding: 5px;
-  margin: 0 auto;
-  width: 80%;
-  justify-content: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: white;
+.celsius,
+.fahrenheit {
+  position: relative;
+  top: -42px;
+  right: -150px;
+  padding: 4px;
+  width: 60px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  border: 2px solid var(--fourth-color);
+  background-color: var(--fourth-color);
+}
+
+.active-unit {
+  border: 2px solid var(--light-color);
+  background-color: var(--light-color);
+  color: black;
+}
+
+.main-weather {
+  padding-top: 30px;
 }
 
 .current-temperature {
@@ -133,18 +159,13 @@ p {
 }
 
 .title-section {
-  position: relative;
-  left: -70px;
-  top: -85px;
-  float: left;
-  width: 60%;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
+  width: 50%;
+  padding: 3px;
+  padding-left: 35px;
+  margin-top: 10px;
   border-radius: 30px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0;
   background: var(--fourth-color);
   color: white;
 }
@@ -152,17 +173,17 @@ p {
 .weather-section {
   margin: 0 auto;
   width: 100%;
-
-  background: var(--light-color);
   border-radius: 30px;
-  margin-top: 10px;
+  border-top-left-radius: 0;
   color: black;
   text-align: center;
   padding: 10px;
+
+  border: solid 2px var(--fourth-color);
 }
 
 .weather-stat {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bolder;
 }
 
@@ -178,15 +199,9 @@ p {
 }
 
 .high-low {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: left;
-}
-
-.upcoming-grid {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  border: #66616d solid 0px;
+  font-size: 18px;
 }
 
 .forecast-section {
@@ -196,12 +211,14 @@ p {
 
 .forecast-box {
   text-align: center;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 30px;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  margin: 5px;
+  margin-top: 20px;
   border-radius: 30px;
   background: var(--secondary-color);
   color: white;
+  width: 14%;
 }
 
 .forecast-box.one {
@@ -227,14 +244,18 @@ p {
   margin-top: 10px;
 }
 
-.forecast-temperature {
+.forecast-icon {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 30px;
   padding-bottom: 10px;
+}
+
+.forecast-high-low {
+  font-size: 18px;
 }
 
 .footer {
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 8px;
   color: black;
 }

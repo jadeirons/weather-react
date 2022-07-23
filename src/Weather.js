@@ -12,8 +12,13 @@ export default function Search() {
         </div>
       </div>
 
+      <div class="unit-section">
+        <button class="celsius active-unit">°C</button>
+        <button class="fahrenheit">°F</button>
+      </div>
+
       <div class="row weather-section">
-        <div class="col-7">
+        <div class="col-7 main-weather">
           <div class="row">
             <div class="col-8">
               <span class="current-temperature">

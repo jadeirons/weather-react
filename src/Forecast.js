@@ -8,27 +8,12 @@ export default function Forecast() {
           <p class="forecast day">Monday</p>
         </div>
         <div class="row">
-          <span class="forecast-temperature">
-            <i class="fa-solid fa-cloud"></i> 24°C
-          </span>
+          <i class="fa-solid fa-cloud forecast-icon"></i>
         </div>
         <div class="row">
-          <div>33°C | 21°C</div>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Feels like: <div class="weather-stat">26°C</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Humidity: <div class="weather-stat">50%</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Wind: <div class="weather-stat">6km/hr</div>
-          </p>
+          <div class="forecast-high-low">
+            <strong>33°C</strong> | 21°C
+          </div>
         </div>
       </div>
       <div class="forecast-box col-2 two">
@@ -36,27 +21,12 @@ export default function Forecast() {
           <p class="forecast day">Tuesday</p>
         </div>
         <div class="row">
-          <span class="forecast-temperature">
-            <i class="fa-solid fa-cloud"></i> 24°C
-          </span>
+          <i class="fa-solid fa-cloud forecast-icon"></i>
         </div>
         <div class="row">
-          <div>33°C | 21°C</div>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Feels like: <div class="weather-stat">26°C</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Humidity: <div class="weather-stat">50%</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Wind: <div class="weather-stat">6km/hr</div>
-          </p>
+          <div class="forecast-high-low">
+            <strong>33°C</strong> | 21°C
+          </div>
         </div>
       </div>
       <div class="forecast-box col-2 three">
@@ -64,27 +34,12 @@ export default function Forecast() {
           <p class="forecast day">Wednesday</p>
         </div>
         <div class="row">
-          <span class="forecast-temperature">
-            <i class="fa-solid fa-cloud"></i> 24°C
-          </span>
+          <i class="fa-solid fa-cloud forecast-icon"></i>
         </div>
         <div class="row">
-          <div>33°C | 21°C</div>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Feels like: <div class="weather-stat">26°C</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Humidity: <div class="weather-stat">50%</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Wind: <div class="weather-stat">6km/hr</div>
-          </p>
+          <div class="forecast-high-low">
+            <strong>33°C</strong> | 21°C
+          </div>
         </div>
       </div>
       <div class="forecast-box col-2 four">
@@ -92,27 +47,12 @@ export default function Forecast() {
           <p class="forecast day">Thursday</p>
         </div>
         <div class="row">
-          <span class="forecast-temperature">
-            <i class="fa-solid fa-cloud"></i> 24°C
-          </span>
+          <i class="fa-solid fa-cloud forecast-icon"></i>
         </div>
         <div class="row">
-          <div>33°C | 21°C</div>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Feels like: <div class="weather-stat">26°C</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Humidity: <div class="weather-stat">50%</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Wind: <div class="weather-stat">6km/hr</div>
-          </p>
+          <div class="forecast-high-low">
+            <strong>33°C</strong> | 21°C
+          </div>
         </div>
       </div>
       <div class="forecast-box col-2 five">
@@ -120,27 +60,12 @@ export default function Forecast() {
           <p class="forecast day">Friday</p>
         </div>
         <div class="row">
-          <span class="forecast-temperature">
-            <i class="fa-solid fa-cloud"></i> 24°C
-          </span>
+          <i class="fa-solid fa-cloud forecast-icon"></i>
         </div>
         <div class="row">
-          <div>33°C | 21°C</div>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Feels like: <div class="weather-stat">26°C</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Humidity: <div class="weather-stat">50%</div>
-          </p>
-        </div>
-        <div class="row weather-detail forecast">
-          <p>
-            Wind: <div class="weather-stat">6km/hr</div>
-          </p>
+          <div class="forecast-high-low">
+            <strong>33°C</strong> | 21°C
+          </div>
         </div>
       </div>
     </div>
