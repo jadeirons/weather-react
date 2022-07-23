@@ -4,11 +4,9 @@ export default function Search() {
   return (
     <div>
       <div class="title-section">
-        <div class="row">
-          <div class="col-12">
-            <h1>Weather in Toronto, CA</h1>
-            <h2>It's 8:15am on Tuesday, July 21, 2022</h2>
-          </div>
+        <div class="row title-text">
+          <h1>Weather in Toronto, CA</h1>
+          <h2>It's 8:15am on Tuesday, July 21, 2022</h2>
         </div>
       </div>
 
@@ -21,35 +19,32 @@ export default function Search() {
         <div class="col-4">
           <img class="weather-image" src="/images/cloudy.png" alt="cloudy" />
         </div>
-        <div class="col-8 main-weather">
+        <div class="col-8">
           <div class="row">
-            <div class="col-4">
+            <div class="col-8 current-center">
               <span class="current-temperature">
-                <i id="icon" class="fa-solid fa-cloud"></i> 24
-                <span class="unit">°C</span>
+                <i class="fa-solid fa-cloud"></i> 24
+                <span class="current-unit">°C</span>
               </span>
-            </div>
-
-            <div class="col-4">
+              <div class="current-description">Cloudy</div>
               <div class="high-low">
-                <div class="current-high">
-                  HIGH: <span id="current-high">33</span>°C
-                </div>
-                LOW: <span id="current-low">21</span>°C
+                <span class="temperature-high">33°C</span>
+                <span> | 21</span>°C
               </div>
             </div>
-            <div class="col-4">
-              <div class="col-4 weather-detail one">
+
+            <div class="col-4 current-right">
+              <div class="weather-detail">
                 <p>
                   Feels like: <div class="weather-stat">26°C</div>
                 </p>
               </div>
-              <div class="col-4 weather-detail two">
+              <div class="weather-detail">
                 <p>
                   Humidity: <div class="weather-stat">50%</div>
                 </p>
               </div>
-              <div class="col-4 weather-detail three">
+              <div class="weather-detail">
                 <p>
                   Wind: <div class="weather-stat">6km/hr</div>
                 </p>

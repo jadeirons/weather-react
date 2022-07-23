@@ -12,7 +12,7 @@ export default function Forecast() {
         </div>
         <div class="row">
           <div class="forecast-high-low">
-            <strong>33°C</strong> | 21°C
+            <span class="temperature-high">33°C</span> | 21°C
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function Forecast() {
         </div>
         <div class="row">
           <div class="forecast-high-low">
-            <strong>33°C</strong> | 21°C
+            <span class="temperature-high">33°C</span> | 21°C
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function Forecast() {
         </div>
         <div class="row">
           <div class="forecast-high-low">
-            <strong>33°C</strong> | 21°C
+            <span class="temperature-high">33°C</span> | 21°C
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function Forecast() {
         </div>
         <div class="row">
           <div class="forecast-high-low">
-            <strong>33°C</strong> | 21°C
+            <span class="temperature-high">33°C</span> | 21°C
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Forecast() {
         </div>
         <div class="row">
           <div class="forecast-high-low">
-            <strong>33°C</strong> | 21°C
+            <span class="temperature-high">33°C</span> | 21°C
           </div>
         </div>
       </div>

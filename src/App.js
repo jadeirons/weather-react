@@ -6,10 +6,12 @@ import Forecast from "./Forecast";
 
 export default function App() {
   return (
-    <div class="Box">
+    <div>
       <Search />
-      <Weather />
-      <Forecast />
+      <div class="box">
+        <Weather />
+        <Forecast />
+      </div>
       <Footer />
     </div>
   );
