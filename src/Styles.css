@@ -177,8 +177,8 @@ input::placeholder {
   border-top-left-radius: 0;
   color: black;
   text-align: center;
-  padding: 10px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: solid 2px var(--fourth-color);
 }
 
