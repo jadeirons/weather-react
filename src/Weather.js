@@ -6,7 +6,6 @@ export default function Search() {
       <div className="title-section">
         <div className="row title-text">
           <h1>Weather in Toronto, CA</h1>
-          <h2>It's 8:15am on Tuesday, July 21, 2022</h2>
         </div>
       </div>
 
@@ -26,6 +25,10 @@ export default function Search() {
         <div className="col-8">
           <div className="row">
             <div className="col-8 current-center">
+              <div class="time-and-date">
+                <span class="time">8:15am | </span>
+                <span class="date">Tuesday, July 21, 2022</span>
+              </div>
               <span className="current-temperature">
                 <i className="fa-solid fa-cloud"></i> 24
                 <span className="current-unit">°C</span>

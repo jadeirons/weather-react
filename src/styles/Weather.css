@@ -1,16 +1,21 @@
+.Weather h1 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
 .Weather .title-section {
-  width: 50%;
+  width: 100%;
   padding: 5px;
-  margin-top: 10px;
+
   border-radius: 20px;
   border-bottom-left-radius: 0%;
   border-bottom-right-radius: 0;
-  background: var(--third-color);
+  background: white;
 }
 
 .Weather .title-text {
-  width: 100%;
-  color: white;
+  text-align: left;
 }
 
 .Weather .unit-section {
@@ -43,7 +48,6 @@
 .Weather .weather-section {
   margin: 0 auto;
   border-radius: 30px;
-  border-top-left-radius: 0;
   color: black;
   padding: 10px;
   background: var(--light-color);
@@ -54,16 +58,29 @@
 }
 
 .Weather .current-center {
-  margin-top: 5px;
-  padding-top: 18px;
+  padding-top: 15px;
   background: white;
-  border: var(--light-color) 20px solid;
-  border-radius: 30px;
+  border: var(--light-color) 25px solid;
+  border-radius: 40px;
+}
+
+.Weather .time-and-date {
+  margin-bottom: 20px;
+}
+
+.Weather .time {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Weather .date {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .Weather .current-temperature {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .Weather .current-unit {
@@ -73,12 +90,14 @@
 }
 
 .Weather .current-description {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .Weather .high-low {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .Weather .temperature-high {
