@@ -4,7 +4,7 @@ export default function Search() {
   return (
     <div className="Weather">
       <div className="title-section">
-        <div className="row title-text">
+        <div className="row">
           <h1>Weather in Toronto, CA</h1>
         </div>
       </div>
