@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div>
       <br />
-      <div class="footer">
+      <div className="footer">
         <a
           href="https://github.com/jadeirons/weather-react"
           target="_blank"

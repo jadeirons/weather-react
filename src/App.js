@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Styles.css";
 import Search from "./Search";
 import Weather from "./Weather";
@@ -6,9 +7,9 @@ import Forecast from "./Forecast";
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Search />
-      <div class="box">
+      <div className="box">
         <Weather />
         <Forecast />
       </div>

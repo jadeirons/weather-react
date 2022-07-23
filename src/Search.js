@@ -3,13 +3,13 @@ import "./Styles.css";
 export default function Search() {
   return (
     <div>
-      <form class="search-form">
+      <form className="search-form">
         <input
           type="search"
-          class="search-input"
+          className="search-input"
           placeholder="Search for a city..."
         />
-        <input type="submit" value="Search" class="search-button" />
+        <input type="submit" value="Search" className="search-button" />
       </form>
     </div>
   );
