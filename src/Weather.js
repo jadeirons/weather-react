@@ -1,8 +1,8 @@
-import "./Styles.css";
+import "./styles/Weather.css";
 
 export default function Search() {
   return (
-    <div>
+    <div className="Weather">
       <div className="title-section">
         <div className="row title-text">
           <h1>Weather in Toronto, CA</h1>
@@ -39,19 +39,13 @@ export default function Search() {
 
             <div className="col-4 current-right">
               <div className="weather-detail">
-                <p>
-                  Feels like: <div className="weather-stat">26°C</div>
-                </p>
+                Feels like: <div className="weather-stat">26°C</div>
               </div>
               <div className="weather-detail">
-                <p>
-                  Humidity: <div className="weather-stat">50%</div>
-                </p>
+                Humidity: <div className="weather-stat">50%</div>
               </div>
               <div className="weather-detail">
-                <p>
-                  Wind: <div className="weather-stat">6km/hr</div>
-                </p>
+                Wind: <div className="weather-stat">6km/hr</div>
               </div>
             </div>
           </div>

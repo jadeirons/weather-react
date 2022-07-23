@@ -1,0 +1,106 @@
+.Weather .title-section {
+  width: 50%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0;
+  background: var(--third-color);
+}
+
+.Weather .title-text {
+  width: 100%;
+  color: white;
+}
+
+.Weather .unit-section {
+  height: 0;
+}
+
+.Weather .celsius,
+.fahrenheit {
+  text-decoration: none;
+  position: relative;
+  top: -38px;
+  left: 37%;
+  padding: 4px;
+  width: 65px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  border: none;
+  background-color: var(--third-color);
+}
+
+.Weather .active-unit {
+  background-color: var(--light-color);
+  color: black;
+}
+
+.Weather .weather-section {
+  margin: 0 auto;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  color: black;
+  padding: 10px;
+  background: var(--light-color);
+}
+
+.Weather .weather-image {
+  max-height: 250px;
+}
+
+.Weather .current-center {
+  margin-top: 5px;
+  padding-top: 18px;
+  background: white;
+  border: var(--light-color) 20px solid;
+  border-radius: 30px;
+}
+
+.Weather .current-temperature {
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.Weather .current-unit {
+  font-size: 18px;
+  position: relative;
+  top: -32px;
+}
+
+.Weather .current-description {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Weather .high-low {
+  font-size: 18px;
+}
+
+.Weather .temperature-high {
+  font-weight: 600;
+}
+
+.Weather .current-right {
+  height: 100%;
+  margin-top: 10px;
+}
+
+.Weather .weather-detail {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  margin-left: 0;
+  width: 90%;
+  font-size: 14px;
+}
+
+.Weather .weather-stat {
+  font-size: 16px;
+  font-weight: 500;
+}

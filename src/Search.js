@@ -1,8 +1,8 @@
-import "./Styles.css";
+import "./styles/Search.css";
 
 export default function Search() {
   return (
-    <div>
+    <div className="Search">
       <form className="search-form">
         <input
           type="search"

@@ -1,0 +1,56 @@
+.Forecast .forecast-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px;
+}
+
+.Forecast .forecast-box {
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.Forecast .forecast-box.one {
+  background: var(--main-color);
+}
+.Forecast .forecast-box.two {
+  background: var(--secondary-color);
+}
+.Forecast .forecast-box.three {
+  background: var(--third-color);
+}
+.Forecast .forecast-box.four {
+  background: var(--fourth-color);
+}
+.Forecast .forecast-box.five {
+  background: var(--fifth-color);
+}
+
+.Forecast .forecast-day {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+}
+
+.Forecast .forecast-icon {
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.Forecast .forecast-high-low {
+  font-size: 18px;
+}
+
+.Forecast .temperature-high {
+  font-weight: 600;
+}
+
+.Forecast .footer {
+  font-size: 12px;
+}

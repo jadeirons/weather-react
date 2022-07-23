@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Styles.css";
+import "./styles/App.css";
 import Search from "./Search";
 import Weather from "./Weather";
 import Footer from "./Footer";
