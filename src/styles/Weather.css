@@ -108,15 +108,16 @@
 
 .Weather .weather-detail {
   border-radius: 10px;
-  padding: 10px;
+  padding: 7px;
   background-color: white;
   margin: 10px;
+  margin-top: 16px;
   margin-left: 0;
   width: 90%;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .Weather .weather-stat {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
