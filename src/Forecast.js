@@ -16,18 +16,18 @@ export default function Forecast() {
             </div>
           </div>
         </div>
-        <div className="forecast-box col-2 two">
+        <div className="forecast-box col-2 three">
           <div className="row forecast-day">Tuesday</div>
           <div className="row">
             <i className="fa-solid fa-cloud forecast-icon"></i>
           </div>
           <div className="row">
-            <div className="forecast-high-low">
+            <div className="forecast-high">
               <span className="temperature-high">33°C</span> | 21°C
             </div>
           </div>
         </div>
-        <div className="forecast-box col-2 three">
+        <div className="forecast-box col-2 one">
           <div className="row forecast-day">Wednesday</div>
           <div className="row">
             <i className="fa-solid fa-cloud forecast-icon"></i>
@@ -38,7 +38,7 @@ export default function Forecast() {
             </div>
           </div>
         </div>
-        <div className="forecast-box col-2 four">
+        <div className="forecast-box col-2 three">
           <div className="row forecast-day">Thursday</div>
           <div className="row">
             <i className="fa-solid fa-cloud forecast-icon"></i>
@@ -49,7 +49,7 @@ export default function Forecast() {
             </div>
           </div>
         </div>
-        <div className="forecast-box col-2 five">
+        <div className="forecast-box col-2 one">
           <div className="row forecast-day">Friday</div>
           <div className="row">
             <i className="fa-solid fa-cloud forecast-icon"></i>
