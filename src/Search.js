@@ -35,7 +35,7 @@ export default function Search() {
       </form>
 
       <div className="box">
-        <Weather city={city} />
+        <Weather defaultCity="New York" />
         <Forecast />;
       </div>
     </div>
