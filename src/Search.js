@@ -1,12 +1,12 @@
 import React from "react";
-import "./styles/Search.css";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
+import "./styles/Search.css";
+import "./styles/App.css";
 
 export default function Search() {
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("hello");
   }
 
   function updateCity(event) {
@@ -22,10 +22,16 @@ export default function Search() {
           placeholder="Search for a city..."
           onChange={updateCity}
         />
-        <input type="submit" value="Search" className="search-button" />
+        <input
+          type="submit"
+          value="Search"
+          className="search-button"
+          onClick={handleSubmit}
+        />
       </form>
+
       <div className="box">
-        <Weather city="city" />
+        <Weather city="Toronto" />
         <Forecast />
       </div>
     </div>

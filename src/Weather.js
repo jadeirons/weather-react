@@ -1,12 +1,12 @@
 import "./styles/Weather.css";
 import axios from "axios";
 
-export default function Weather() {
+export default function Weather(props) {
   return (
     <div className="Weather">
       <div className="title-section">
         <div className="row">
-          <h1>Weather in Toronto, CA</h1>
+          <h1>Weather in {props.city}, CA</h1>
         </div>
       </div>
 
@@ -27,8 +27,8 @@ export default function Weather() {
           <div className="row">
             <div className="col-8 current-center">
               <div class="time-and-date">
-                <span class="time">8:15am | </span>
-                <span class="date">Tuesday, July 21, 2022</span>
+                <span className="time">8:15am | </span>
+                <span className="date">Tuesday, July 21, 2022</span>
               </div>
               <span className="current-temperature">
                 <i className="fa-solid fa-cloud"></i> 24
