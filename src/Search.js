@@ -1,21 +1,20 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
 import "./styles/Search.css";
 import "./styles/App.css";
 
 export default function Search() {
-  const [city, setCity] = useState(null);
-  const apiKey = "1979bc82187db3756ece8eeb6f265da0";
-  const unit = "metric";
+  let city = "";
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log(city);
   }
 
   function updateSearchCity(event) {
-    setCity(event.target.value);
-    alert(city);
+    city = event.target.value;
   }
 
   return (
@@ -36,7 +35,7 @@ export default function Search() {
       </form>
 
       <div className="box">
-        <Weather />
+        <Weather city={city} />
         <Forecast />;
       </div>
     </div>
