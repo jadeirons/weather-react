@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
 import "./styles/Search.css";
 import "./styles/App.css";
 
 export default function Search() {
+  const [city, setCity] = useState("");
+  const [ready, setReady] = useState(false);
+
   function handleSubmit(event) {
     event.preventDefault();
+    setReady(true);
+    console.log(city);
   }
 
   function updateCity(event) {
-    console.log(event.target.value);
+    setCity(event.target.value);
   }
 
   return (
@@ -31,7 +36,7 @@ export default function Search() {
       </form>
 
       <div className="box">
-        <Weather city="Toronto" />
+        <Weather city={city} ready={ready} />
         <Forecast />
       </div>
     </div>
