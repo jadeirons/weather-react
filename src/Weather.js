@@ -1,12 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
+import TimeAndDate from "./TimeAndDate";
 import "./styles/Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response);
     setWeatherData({
       ready: true,
       city: response.data.name,
@@ -19,6 +19,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
     });
+    console.log(response);
   }
 
   if (weatherData.ready) {
@@ -48,10 +49,7 @@ export default function Weather(props) {
           <div className="col-8">
             <div className="row">
               <div className="col-8 current-center">
-                <div className="time-and-date">
-                  <span className="time">8:15am | </span>
-                  <span className="date">Tuesday, July 21, 2022</span>
-                </div>
+                <TimeAndDate lat="-36.8667" lon="174.7667" />
                 <span className="current-temperature">
                   <i className="fa-solid fa-cloud"></i> {weatherData.temp}
                   <span className="current-unit">°C</span>

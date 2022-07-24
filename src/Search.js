@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
+
 import "./styles/Search.css";
 import "./styles/App.css";
 
@@ -35,7 +35,7 @@ export default function Search() {
       </form>
 
       <div className="box">
-        <Weather defaultCity="New York" />
+        <Weather defaultCity="Auckland" />
         <Forecast />;
       </div>
     </div>
