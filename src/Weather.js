@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./styles/Weather.css";
 import axios from "axios";
 
@@ -26,7 +27,7 @@ export default function Weather(props) {
         <div className="col-8">
           <div className="row">
             <div className="col-8 current-center">
-              <div class="time-and-date">
+              <div className="time-and-date">
                 <span className="time">8:15am | </span>
                 <span className="date">Tuesday, July 21, 2022</span>
               </div>
