@@ -3,38 +3,31 @@ import React, { useState } from "react";
 import "./styles/Weather.css";
 
 export default function Weather(props) {
-  const [ready, setReady] = useState(false);
-  const [city, setCity] = useState(null);
-  const [country, setcountry] = useState(null);
-  const [temp, setTemp] = useState(null);
-  const [description, setDescription] = useState(null);
-  const [high, setHigh] = useState(null);
-  const [low, setLow] = useState(null);
-  const [feelsLike, setFeelsLike] = useState(null);
-  const [humidity, setHumdity] = useState(null);
-  const [wind, setWind] = useState(null);
+  const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
     console.log(response);
-    setReady(true);
-    setCity(response.data.name);
-    setcountry(response.data.sys.country);
-    setTemp(Math.round(response.data.main.temp));
-    setDescription(response.data.weather[0].main);
-    setHigh(Math.round(response.data.main.temp_max));
-    setLow(Math.round(response.data.main.temp_min));
-    setFeelsLike(Math.round(response.data.main.feels_like));
-    setHumdity(response.data.main.humidity);
-    setWind(Math.round(response.data.wind.speed));
+    setWeatherData({
+      ready: true,
+      city: response.data.name,
+      country: response.data.sys.country,
+      temp: Math.round(response.data.main.temp),
+      description: response.data.weather[0].description,
+      high: Math.round(response.data.main.temp_max),
+      low: Math.round(response.data.main.temp_min),
+      feelsLike: Math.round(response.data.main.feels_like),
+      humidity: response.data.main.humidity,
+      wind: Math.round(response.data.wind.speed),
+    });
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <div className="title-section">
           <div className="row">
             <h1>
-              Weather in {city}, {country}
+              Weather in {weatherData.city}, {weatherData.country}
             </h1>
           </div>
         </div>
@@ -60,25 +53,30 @@ export default function Weather(props) {
                   <span className="date">Tuesday, July 21, 2022</span>
                 </div>
                 <span className="current-temperature">
-                  <i className="fa-solid fa-cloud"></i> {temp}
+                  <i className="fa-solid fa-cloud"></i> {weatherData.temp}
                   <span className="current-unit">°C</span>
                 </span>
-                <div className="current-description">{description}</div>
+                <div className="current-description text-capitalize">
+                  {weatherData.description}
+                </div>
                 <div className="high-low">
-                  <span className="temperature-high">{high}°C</span>
-                  <span> | {low}</span>°C
+                  <span className="temperature-high">{weatherData.high}°C</span>
+                  <span> | {weatherData.low}</span>°C
                 </div>
               </div>
 
               <div className="col-4 current-right">
                 <div className="weather-detail">
-                  Feels like: <div className="weather-stat">{feelsLike}°C</div>
+                  Feels like:{" "}
+                  <div className="weather-stat">{weatherData.feelsLike}°C</div>
                 </div>
                 <div className="weather-detail">
-                  Humidity: <div className="weather-stat">{humidity}%</div>
+                  Humidity:{" "}
+                  <div className="weather-stat">{weatherData.humidity}%</div>
                 </div>
                 <div className="weather-detail">
-                  Wind: <div className="weather-stat">{wind}km/hr</div>
+                  Wind:{" "}
+                  <div className="weather-stat">{weatherData.wind}km/hr</div>
                 </div>
               </div>
             </div>
@@ -88,7 +86,7 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = "1979bc82187db3756ece8eeb6f265da0";
-    const city = "London";
+    const city = "Toronto";
     const unit = "metric";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
     axios.get(apiUrl).then(handleResponse);
