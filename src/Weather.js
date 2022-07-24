@@ -1,6 +1,7 @@
 import "./styles/Weather.css";
+import axios from "axios";
 
-export default function Search() {
+export default function Weather() {
   return (
     <div className="Weather">
       <div className="title-section">
