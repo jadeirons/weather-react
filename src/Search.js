@@ -5,17 +5,17 @@ import "./styles/Search.css";
 import "./styles/App.css";
 
 export default function Search() {
-  const [city, setCity] = useState("");
-  const [ready, setReady] = useState(false);
+  const [city, setCity] = useState(null);
+  const apiKey = "1979bc82187db3756ece8eeb6f265da0";
+  const unit = "metric";
 
   function handleSubmit(event) {
     event.preventDefault();
-    setReady(true);
-    console.log(city);
   }
 
-  function updateCity(event) {
+  function updateSearchCity(event) {
     setCity(event.target.value);
+    alert(city);
   }
 
   return (
@@ -25,7 +25,7 @@ export default function Search() {
           type="search"
           className="search-input"
           placeholder="Search for a city..."
-          onChange={updateCity}
+          onChange={updateSearchCity}
         />
         <input
           type="submit"
@@ -36,8 +36,8 @@ export default function Search() {
       </form>
 
       <div className="box">
-        <Weather city={city} ready={ready} />
-        <Forecast />
+        <Weather />
+        <Forecast />;
       </div>
     </div>
   );
