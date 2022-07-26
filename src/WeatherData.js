@@ -28,7 +28,14 @@ export default function WeatherData(props) {
         <div className="col-8">
           <div className="row">
             <div className="col-8 current-center">
-              <TimeAndDate lat="-36.8667" lon="174.7667" />
+              <TimeAndDate
+                hours={props.timeDate.hours}
+                minutes={props.timeDate.minutes}
+                day={props.timeDate.day}
+                month={props.timeDate.month}
+                date={props.timeDate.date}
+                year={props.timeDate.year}
+              />
               <span className="current-temperature">
                 <i className="fa-solid fa-cloud"></i> {props.weatherData.temp}
                 <span className="current-unit">°C</span>
