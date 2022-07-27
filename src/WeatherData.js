@@ -1,5 +1,4 @@
 import React from "react";
-import TimeAndDate from "./TimeAndDate";
 
 export default function WeatherData(props) {
   return (
@@ -28,14 +27,16 @@ export default function WeatherData(props) {
         <div className="col-8">
           <div className="row">
             <div className="col-8 current-center">
-              <TimeAndDate
-                hours={props.timeDate.hours}
-                minutes={props.timeDate.minutes}
-                day={props.timeDate.day}
-                month={props.timeDate.month}
-                date={props.timeDate.date}
-                year={props.timeDate.year}
-              />
+              <div className="time-and-date">
+                <span className="time">
+                  {props.timeDate.hours}:{props.timeDate.minutes} |{" "}
+                </span>
+                <span className="date">
+                  {props.timeDate.day}, {props.timeDate.month}{" "}
+                  {props.timeDate.date}, {props.timeDate.year}
+                </span>
+              </div>
+
               <span className="current-temperature">
                 <i className="fa-solid fa-cloud"></i> {props.weatherData.temp}
                 <span className="current-unit">°C</span>
