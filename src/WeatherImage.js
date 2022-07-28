@@ -1,8 +1,33 @@
 import React from "react";
 
 export default function WeatherImage(props) {
-  if (props.iconCode === "01d") {
-    return <i className="fa-solid fa-sun"></i>;
+  if ((props.iconCode === "01d", props.temp >= 0)) {
+    return (
+      <img className="weather-image" src="/images/sunny.png" alt="Clear" />
+    );
+  }
+  if ((props.iconCode === "01n", props.temp >= 0)) {
+    return (
+      <img className="weather-image" src="/images/sunny.png" alt="Clear" />
+    );
+  }
+  if ((props.iconCode === "01d", props.temp < 0)) {
+    return (
+      <img
+        className="weather-image"
+        src="/images/winter-clear.png"
+        alt="Clear"
+      />
+    );
+  }
+  if ((props.iconCode === "01n", props.temp < 0)) {
+    return (
+      <img
+        className="weather-image"
+        src="/images/winter-clear.png"
+        alt="Clear"
+      />
+    );
   }
   if (props.iconCode === "02d") {
     return (
@@ -30,38 +55,52 @@ export default function WeatherImage(props) {
     );
   }
   if (props.iconCode === "09d") {
-    return <i className="fa-solid fa-cloud-rain"></i>;
+    return <img className="weather-image" src="/images/rainy.png" alt="Rain" />;
   }
   if (props.iconCode === "09n") {
-    return <i className="fa-solid fa-cloud-rain"></i>;
+    return <img className="weather-image" src="/images/rainy.png" alt="Rain" />;
   }
   if (props.iconCode === "10d") {
-    return <i className="fa-solid fa-cloud-showers-heavy"></i>;
+    return <img className="weather-image" src="/images/rainy.png" alt="Rain" />;
   }
   if (props.iconCode === "10n") {
-    return <i className="fa-solid fa-cloud-showers-heavy"></i>;
+    return <img className="weather-image" src="/images/rainy.png" alt="Rain" />;
   }
   if (props.iconCode === "11d") {
-    return <i className="fa-solid fa-cloud-bolt"></i>;
+    return (
+      <img
+        className="weather-image"
+        src="/images/thunderstorms.png"
+        alt="Thunderstorm"
+      />
+    );
   }
   if (props.iconCode === "11n") {
-    return <i className="fa-solid fa-cloud-bolt"></i>;
+    return (
+      <img
+        className="weather-image"
+        src="/images/thunderstorms.png"
+        alt="Thunderstorm"
+      />
+    );
   }
   if (props.iconCode === "13d") {
-    return <i className="fa-solid fa-snowflake"></i>;
+    return <img className="weather-image" src="/images/snow.png" alt="Snow" />;
   }
   if (props.iconCode === "13n") {
-    return <i className="fa-solid fa-snowflake"></i>;
+    return <img className="weather-image" src="/images/snow.png" alt="Snow" />;
   }
   if (props.iconCode === "50d") {
-    return <i className="fa-solid fa-smog"></i>;
+    return (
+      <img className="weather-image" src="/images/cloudy.png" alt="Smog" />
+    );
   }
   if (props.iconCode === "50n") {
-    return <i className="fa-solid fa-smog"></i>;
+    return (
+      <img className="weather-image" src="/images/cloudy.png" alt="Smog" />
+    );
   }
-  if (props.iconCode === "01n") {
-    return <i className="fa-solid fa-moon"></i>;
-  }
+
   if (props.iconCode === "02n") {
     <img className="weather-image" src="/images/cloudy.png" alt="Cloudy" />;
   }
