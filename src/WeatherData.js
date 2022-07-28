@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import TimeAndDate from "./TimeAndDate";
+import WeatherIcon from "./WeatherIcon";
+import WeatherImage from "./WeatherImage";
 import axios from "axios";
 
 export default function WeatherData(props) {
@@ -60,11 +62,7 @@ export default function WeatherData(props) {
 
         <div className="row weather-section">
           <div className="col-4">
-            <img
-              className="weather-image"
-              src="/images/cloudy.png"
-              alt="cloudy"
-            />
+            <WeatherImage iconCode={props.weatherData.icon} />
           </div>
           <div className="col-8">
             <div className="row">
@@ -79,7 +77,8 @@ export default function WeatherData(props) {
                 />
 
                 <span className="current-temperature">
-                  <i className="fa-solid fa-cloud"></i> {props.weatherData.temp}
+                  <WeatherIcon iconCode={props.weatherData.icon} />
+                  {props.weatherData.temp}
                   <span className="current-unit">°C</span>
                 </span>
                 <div className="current-description text-capitalize">

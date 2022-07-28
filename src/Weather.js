@@ -31,6 +31,7 @@ export default function Weather() {
       wind: Math.round(response.data.wind.speed),
       lat: response.data.coord.lat,
       lon: response.data.coord.lon,
+      icon: response.data.weather[0].icon,
     });
   }
 
