@@ -4,53 +4,9 @@ import Forecast from "./Forecast";
 import "./styles/Weather.css";
 import axios from "axios";
 
-export default function Weather(props) {
+export default function Weather() {
   const [city, setCity] = useState("Toronto");
-  const [timeDate, setTimeDate] = useState({});
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [lat, setLat] = useState(43.65107);
-  const [lon, setLon] = useState(-79.347015);
-
-  function search() {
-    const weatherApiKey = "1979bc82187db3756ece8eeb6f265da0";
-    const unit = "metric";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApiKey}&units=${unit}`;
-    axios.get(apiUrl).then(handleWeatherResponse);
-  }
-
-  function formatTimeDate(localTime) {
-    const now = new Date(localTime.data.date_time);
-    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-
-    setTimeDate({
-      hours: String(now.getHours()).padStart(2, "0"),
-      minutes: String(now.getMinutes()).padStart(2, "0"),
-      day: days[now.getDay()],
-      month: months[now.getMonth()],
-      date: now.getDate(),
-      year: now.getFullYear(),
-    });
-  }
-
-  function getTime(props) {
-    let apiKey = "7ad2b873cae54adc90035c81c86bc039";
-    let timeApi = `https://api.ipgeolocation.io/timezone?apiKey=${apiKey}&lat=${lat}&long=${lon}`;
-    axios.get(timeApi).then(formatTimeDate);
-  }
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -73,10 +29,16 @@ export default function Weather(props) {
       feelsLike: Math.round(response.data.main.feels_like),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
     });
-    setLat(response.data.coord.lat);
-    setLon(response.data.coord.lon);
-    getTime();
+  }
+
+  function search() {
+    const weatherApiKey = "1979bc82187db3756ece8eeb6f265da0";
+    const unit = "metric";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApiKey}&units=${unit}`;
+    axios.get(apiUrl).then(handleWeatherResponse);
   }
 
   if (weatherData.ready) {
@@ -93,7 +55,7 @@ export default function Weather(props) {
         </form>
 
         <div className="box">
-          <WeatherData weatherData={weatherData} timeDate={timeDate} />
+          <WeatherData weatherData={weatherData} />
           <Forecast />;
         </div>
       </div>
