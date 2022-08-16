@@ -32,7 +32,10 @@ export default function Weather() {
       lat: response.data.coord.lat,
       lon: response.data.coord.lon,
       icon: response.data.weather[0].icon,
+      date: new Date(response.data.dt * 1000),
     });
+    console.log(response);
+    console.log(new Date(response.data.dt * 1000));
   }
 
   function search() {
@@ -57,7 +60,7 @@ export default function Weather() {
 
         <div className="box">
           <WeatherData weatherData={weatherData} />
-          <Forecast />;
+          <Forecast />
         </div>
       </div>
     );
