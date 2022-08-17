@@ -34,8 +34,6 @@ export default function Weather() {
       icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
     });
-    console.log(response);
-    console.log(new Date(response.data.dt * 1000));
   }
 
   function search() {
