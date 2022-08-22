@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function TimeAndDate(props) {
-  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const months = [
+  const now = new Date();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let months = [
     "January",
     "February",
     "March",
@@ -16,16 +17,20 @@ export default function TimeAndDate(props) {
     "November",
     "December",
   ];
-  let hours = props.date.getHours().padStart(2, "0");
-  let minutes = props.date.getMinutes().padStart(2, "0");
-  let day = days[props.date.getDay()];
-  let month = months[props.date.getMonth()];
-  let date = props.date.getDate();
-  let year = props.date.getFullYear();
-
+  let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let month = months[now.getMonth()];
+  let date = now.getDate();
+  let day = days[now.getDay()];
   return (
     <div className="time-and-date">
-      {hours}:{minutes} | {day}, {month} {date}, {year}
+      {hours}:{minutes} | {day}, {month} {date}
     </div>
   );
 }

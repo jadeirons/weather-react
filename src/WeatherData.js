@@ -29,7 +29,10 @@ export default function WeatherData(props) {
         <div className="col-8">
           <div className="row">
             <div className="col-8 current-center">
-              <TimeAndDate date={WeatherData.date} />
+              <TimeAndDate
+                timezone={props.weatherData.timezone}
+                timestamp={props.weatherData.timestamp}
+              />
               <span className="current-temperature">
                 <WeatherIcon iconCode={props.weatherData.icon} />
                 {props.weatherData.temp}

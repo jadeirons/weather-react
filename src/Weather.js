@@ -32,8 +32,10 @@ export default function Weather() {
       lat: response.data.coord.lat,
       lon: response.data.coord.lon,
       icon: response.data.weather[0].icon,
-      date: new Date(response.data.dt * 1000),
+      timezone: response.data.timezone,
+      timestamp: response.data.dt,
     });
+    console.log(response);
   }
 
   function search() {
