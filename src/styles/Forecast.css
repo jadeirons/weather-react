@@ -17,16 +17,7 @@
   background: var(--main-color);
 }
 .Forecast .forecast-box.two {
-  background: var(--secondary-color);
-}
-.Forecast .forecast-box.three {
   background: var(--third-color);
-}
-.Forecast .forecast-box.four {
-  background: var(--fourth-color);
-}
-.Forecast .forecast-box.five {
-  background: var(--fifth-color);
 }
 
 .Forecast .forecast-day {

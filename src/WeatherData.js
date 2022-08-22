@@ -1,8 +1,7 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
 import WeatherImage from "./WeatherImage";
 import TimeAndDate from "./TimeAndDate";
-import WeatherTemperature from "./WeatherTemperature";
+import CurrentWeather from "./CurrentWeather";
 
 export default function WeatherData(props) {
   return (
@@ -12,12 +11,11 @@ export default function WeatherData(props) {
           <h1>
             Weather in {props.weatherData.city}, {props.weatherData.country}
           </h1>
+          <TimeAndDate
+            timezone={props.weatherData.timezone}
+            timestamp={props.weatherData.timestamp}
+          />
         </div>
-      </div>
-
-      <div className="unit-section">
-        <button className="celsius active-unit">°C</button>
-        <button className="fahrenheit">°F</button>
       </div>
 
       <div className="row weather-section">
@@ -27,52 +25,17 @@ export default function WeatherData(props) {
             temp={props.weatherData.temp}
           />
         </div>
-        <div className="col-8">
-          <div className="row">
-            <div className="col-8 current-center">
-              <TimeAndDate
-                timezone={props.weatherData.timezone}
-                timestamp={props.weatherData.timestamp}
-              />
-              <span className="current-weather">
-                <WeatherIcon iconCode={props.weatherData.icon} />
-                <WeatherTemperature celsius={props.weatherData.temp} />
 
-                <span className="current-unit">°C</span>
-              </span>
-              <div className="current-description text-capitalize">
-                {props.weatherData.description}
-              </div>
-              <div className="high-low">
-                <span className="temperature-high">
-                  {props.weatherData.high}°C
-                </span>
-                <span> | {props.weatherData.low}</span>°C
-              </div>
-            </div>
-
-            <div className="col-4 current-right">
-              <div className="weather-detail">
-                Feels like:{" "}
-                <div className="weather-stat">
-                  {props.weatherData.feelsLike}°C
-                </div>
-              </div>
-              <div className="weather-detail">
-                Humidity:{" "}
-                <div className="weather-stat">
-                  {props.weatherData.humidity}%
-                </div>
-              </div>
-              <div className="weather-detail">
-                Wind:{" "}
-                <div className="weather-stat">
-                  {props.weatherData.wind}km/hr
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CurrentWeather
+          icon={props.weatherData.icon}
+          temp={props.weatherData.temp}
+          high={props.weatherData.high}
+          low={props.weatherData.low}
+          feelsLike={props.weatherData.feelsLike}
+          description={props.weatherData.description}
+          humidity={props.weatherData.humidity}
+          wind={props.weatherData.wind}
+        />
       </div>
     </div>
   );

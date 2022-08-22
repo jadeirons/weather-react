@@ -40,9 +40,6 @@ i {
 .Weather h1 {
   font-size: 30px;
   font-weight: 500;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  text-align: left;
 }
 
 .Weather .title-section {
@@ -52,6 +49,9 @@ i {
   border-bottom-left-radius: 0%;
   border-bottom-right-radius: 0;
   background: white;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 .Weather .unit-section {
@@ -62,10 +62,10 @@ i {
 .fahrenheit {
   text-decoration: none;
   position: relative;
-  top: -38px;
-  left: 37%;
+  top: -95px;
+  left: 35%;
   padding: 4px;
-  margin-left: 5px;
+  margin-left: 10px;
   width: 65px;
   border-radius: 10px;
   font-size: 20px;
@@ -85,15 +85,16 @@ i {
   color: black;
   padding: 0px;
   background: white;
+  padding-bottom: 10px;
 }
 
 .Weather .weather-image {
-  max-height: 250px;
+  max-height: 200px;
   border-radius: 10px;
 }
 
 .Weather .current-center {
-  padding-top: 25px;
+  padding-top: 10px;
   background: white;
   border-radius: 40px;
 }
@@ -102,35 +103,24 @@ i {
   margin-bottom: 20px;
 }
 
-.Weather .time {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.Weather .date {
-  font-size: 14px;
-  font-weight: 300;
-}
-
 .Weather .current-weather {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .Weather .current-unit {
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
-  top: -32px;
+  top: -22px;
 }
 
 .Weather .current-description {
-  font-size: 16px;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
 .Weather .high-low {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
@@ -138,23 +128,16 @@ i {
   font-weight: 600;
 }
 
-.Weather .current-right {
-  height: 100%;
-  margin-top: 10px;
-}
-
 .Weather .weather-detail {
-  border-radius: 10px;
-  padding: 7px;
-  background-color: white;
+  padding-bottom: 3px;
   margin: 10px;
-  margin-top: 16px;
+  margin-top: 10px;
   margin-left: 0;
   width: 90%;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .Weather .weather-stat {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
