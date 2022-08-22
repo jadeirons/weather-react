@@ -1,3 +1,7 @@
+i {
+  padding-right: 20px;
+}
+
 .Weather .search-form {
   margin: 0 auto;
   margin-bottom: 15px;
@@ -61,10 +65,9 @@
   top: -38px;
   left: 37%;
   padding: 4px;
+  margin-left: 5px;
   width: 65px;
   border-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   font-size: 20px;
   color: white;
   font-weight: 300;
@@ -79,20 +82,19 @@
 
 .Weather .weather-section {
   margin: 0 auto;
-  border-radius: 30px;
   color: black;
-  padding: 10px;
-  background: var(--light-color);
+  padding: 0px;
+  background: white;
 }
 
 .Weather .weather-image {
   max-height: 250px;
+  border-radius: 10px;
 }
 
 .Weather .current-center {
-  padding-top: 15px;
+  padding-top: 25px;
   background: white;
-  border: var(--light-color) 25px solid;
   border-radius: 40px;
 }
 
@@ -110,7 +112,7 @@
   font-weight: 300;
 }
 
-.Weather .current-temperature {
+.Weather .current-weather {
   font-weight: 400;
   font-size: 50px;
 }

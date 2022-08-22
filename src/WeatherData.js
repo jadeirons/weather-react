@@ -2,6 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherImage from "./WeatherImage";
 import TimeAndDate from "./TimeAndDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherData(props) {
   return (
@@ -33,9 +34,10 @@ export default function WeatherData(props) {
                 timezone={props.weatherData.timezone}
                 timestamp={props.weatherData.timestamp}
               />
-              <span className="current-temperature">
+              <span className="current-weather">
                 <WeatherIcon iconCode={props.weatherData.icon} />
-                {props.weatherData.temp}
+                <WeatherTemperature celsius={props.weatherData.temp} />
+
                 <span className="current-unit">°C</span>
               </span>
               <div className="current-description text-capitalize">

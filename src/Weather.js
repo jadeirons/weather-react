@@ -22,7 +22,7 @@ export default function Weather() {
       ready: true,
       city: response.data.name,
       country: response.data.sys.country,
-      temp: Math.round(response.data.main.temp),
+      temp: response.data.main.temp,
       description: response.data.weather[0].description,
       high: Math.round(response.data.main.temp_max),
       low: Math.round(response.data.main.temp_min),
@@ -35,7 +35,6 @@ export default function Weather() {
       timezone: response.data.timezone,
       timestamp: response.data.dt,
     });
-    console.log(response);
   }
 
   function search() {
