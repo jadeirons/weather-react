@@ -49,6 +49,12 @@ export default function TimeAndDate(props) {
     setLoaded(true);
   }
 
+  function load() {
+    let apiKey = "7ad2b873cae54adc90035c81c86bc039";
+    let timeApi = `https://api.ipgeolocation.io/timezone?apiKey=${apiKey}&lat=${props.lat}&long=${props.lon}`;
+    axios.get(timeApi).then(handleTimeDateResponse);
+  }
+
   if (loaded) {
     return (
       <div className="time-and-date">
@@ -56,8 +62,6 @@ export default function TimeAndDate(props) {
       </div>
     );
   } else {
-    let apiKey = "7ad2b873cae54adc90035c81c86bc039";
-    let timeApi = `https://api.ipgeolocation.io/timezone?apiKey=${apiKey}&lat=${props.lat}&long=${props.lon}`;
-    axios.get(timeApi).then(handleTimeDateResponse);
+    load();
   }
 }
