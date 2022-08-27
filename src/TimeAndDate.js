@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function TimeAndDate(props) {
-  const now = new Date();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const [loaded, setLoaded] = useState(false);
+  const [timeDate, setTimeDate] = useState(null);
+  let now = new Date(timeDate);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let months = [
     "January",
     "February",
@@ -28,9 +39,25 @@ export default function TimeAndDate(props) {
   let month = months[now.getMonth()];
   let date = now.getDate();
   let day = days[now.getDay()];
-  return (
-    <div className="time-and-date">
-      {hours}:{minutes} | {day}, {month} {date}
-    </div>
-  );
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.lat]);
+
+  function handleTimeDateResponse(response) {
+    setTimeDate(response.data.date_time);
+    setLoaded(true);
+  }
+
+  if (loaded) {
+    return (
+      <div className="time-and-date">
+        {hours}:{minutes} | {day}, {month} {date}
+      </div>
+    );
+  } else {
+    let apiKey = "7ad2b873cae54adc90035c81c86bc039";
+    let timeApi = `https://api.ipgeolocation.io/timezone?apiKey=${apiKey}&lat=${props.lat}&long=${props.lon}`;
+    axios.get(timeApi).then(handleTimeDateResponse);
+  }
 }

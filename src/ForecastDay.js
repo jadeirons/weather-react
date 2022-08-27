@@ -17,12 +17,11 @@ export default function ForecastDay(props) {
       "Friday",
       "Saturday",
     ];
-    console.log(day);
     return days[day];
   }
 
   return (
-    <div className="forecast-box col-2 one">
+    <div>
       <div className="row forecast-day">{day()}</div>
       <div className="row forecast-icon">
         <WeatherIcon iconCode={props.data.weather[0].icon} />
