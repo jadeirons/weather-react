@@ -14,6 +14,8 @@ export default function WeatherData(props) {
           <TimeAndDate
             timezone={props.weatherData.timezone}
             timestamp={props.weatherData.timestamp}
+            lat={props.weatherData.lat}
+            lon={props.weatherData.lon}
           />
         </div>
       </div>

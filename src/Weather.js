@@ -59,7 +59,7 @@ export default function Weather() {
 
         <div className="box">
           <WeatherData weatherData={weatherData} />
-          <Forecast />
+          <Forecast lat={weatherData.lat} lon={weatherData.lon} />
         </div>
       </div>
     );
