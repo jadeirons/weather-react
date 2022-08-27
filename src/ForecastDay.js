@@ -17,7 +17,7 @@ export default function ForecastDay(props) {
       "Friday",
       "Saturday",
     ];
-    console.log(now);
+
     return days[day];
   }
 
