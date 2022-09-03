@@ -43,16 +43,12 @@ export default function CurrentWeather(props) {
             <div className="current-description text-capitalize">
               {props.description}
             </div>
-            <div className="high-low">
-              <span className="temperature-high">{props.high}°</span>
-              <span> | {props.low}</span>°
+            <div className="current-description">
+              Feels like: <span className="feels-like">{props.feelsLike}°</span>
             </div>
           </div>
 
           <div className="col-4 current-right">
-            <div className="weather-detail">
-              Feels like: <div className="weather-stat">{props.feelsLike}°</div>
-            </div>
             <div className="weather-detail">
               Humidity: <div className="weather-stat">{props.humidity}%</div>
             </div>

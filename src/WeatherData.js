@@ -31,8 +31,6 @@ export default function WeatherData(props) {
         <CurrentWeather
           icon={props.weatherData.icon}
           temp={props.weatherData.temp}
-          high={props.weatherData.high}
-          low={props.weatherData.low}
           feelsLike={props.weatherData.feelsLike}
           description={props.weatherData.description}
           humidity={props.weatherData.humidity}

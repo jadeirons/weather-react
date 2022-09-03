@@ -119,12 +119,9 @@ i {
   margin-bottom: 10px;
 }
 
-.Weather .high-low {
-  font-size: 20px;
+.Weather .feels-like {
+  font-size: 17px;
   margin-bottom: 5px;
-}
-
-.Weather .temperature-high {
   font-weight: 600;
 }
 
