@@ -4,8 +4,6 @@ import WeatherIcon from "./WeatherIcon";
 export default function CurrentWeather(props) {
   const [unit, setUnit] = useState("celsius");
   const imperialTemp = Math.round((props.temp * 9) / 5 + 32);
-  const imperialHigh = Math.round((props.high * 9) / 5 + 32);
-  const imperialLow = Math.round((props.low * 9) / 5 + 32);
   const imperialFeelsLike = Math.round((props.feelsLike * 9) / 5 + 32);
   const imperialWind = Math.round(props.wind / 1.609);
 
@@ -92,7 +90,7 @@ export default function CurrentWeather(props) {
               Humidity: <div className="weather-stat">{props.humidity}%</div>
             </div>
             <div className="weather-detail">
-              Wind: <div className="weather-stat">{imperialWind}km/hr</div>
+              Wind: <div className="weather-stat">{imperialWind}mph</div>
             </div>
           </div>
         </div>
